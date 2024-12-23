@@ -1,0 +1,14 @@
+# calculating the value by having the user manually input points and euros
+
+points = float(input("enter price in bahnbonus points: "))
+euro = float(input("enter price in euro: "))
+
+result = euro / points * 100
+result = round(result, 2)
+
+print("\n100 points are equal to " + (str(result) + " cents."))
+
+if result > 1:
+    print("good value! (100 points = 1 cent)")
+if result < 1:
+    print("bad value! (100 points = 1 cent)")
