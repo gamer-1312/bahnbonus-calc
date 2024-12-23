@@ -1,0 +1,7 @@
+# automatically fetching the points
+
+import requests
+
+response = requests.get('https://bahnbonus-praemienwelt.de/api/shop/WEB/de/category/products/list?sort=lnra_loyalty_points:asc&limit=1000&offset=0&categoryKey=all')
+
+print(response.json())
